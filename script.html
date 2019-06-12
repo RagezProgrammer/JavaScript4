@@ -1,0 +1,60 @@
+<html>
+
+
+<head></head>
+<body>
+<script language ="JavaScript">
+
+var tablica=new Array(10);
+
+document.write("Tablica na początku "+ "<br/>");
+for(var i=0; i<tablica.length; i++)
+{
+  tablica[i]=i+10;
+  document.write(tablica[i]+"<br/>");
+}
+
+
+document.write("<hr />")
+
+document.write("Tablica po push "+ "<br/>");
+for(var i=0; i<3; i++)
+{
+  tablica.push(((2*10)+(2*i)));
+}
+
+for(var i=0; i<tablica.length; i++)
+{
+  document.write(tablica[i]+"<br/>");
+}
+
+document.write("<hr />")
+document.write("Tablica po pop");
+document.write("<br />");
+
+tablica[1]=tablica.pop();
+tablica[3]=tablica.pop();
+tablica[7]=tablica.pop();
+
+
+
+for(var i=0; i<tablica.length; i++)
+{
+  document.write(tablica[i]+"<br/>");
+}
+
+
+document.write("<hr />")
+
+tablica[4]=3;
+tablica[9]=33;
+
+for(var i=0; i<tablica.length; i++)
+{
+  document.write(tablica[i]+"<br/>");
+}
+
+
+</script>
+</body>
+</html>
